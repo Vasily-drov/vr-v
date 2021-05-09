@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter ETH adress:</p>
+
+<form id="form" action="room.html">
+    <input  type="text" id="userInput" />
+    <input type="submit" onclick="myFunction();" />
+</form>
+
+<script>
+    function myFunction() {
+
+        var input = document.getElementById("userInput").value;
+        sessionStorage.setItem('input', input);
+
+    }
+</script>
+
+</body>
+</html>
+
+
+
