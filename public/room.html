@@ -32,13 +32,12 @@
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <script src="components/nft.js"></script>
 
+
     </head>
 
     <body>
-    <a-scene background="color: black"
-             cursor="rayOrigin: mouse; fuse: false"
-             raycaster="objects: .raycastable"
-             environment>
+    <a-scene>
+        <a-sky src="puydesancy.jpg" rotation="0 -130 0"></a-sky>
         <a-assets timeout="100000">
 
             <a-asset-item id="colonna_obj" src="https://storageapi.fleek.co/stereoliza-team-bucket/assets/temple_colonna.obj"></a-asset-item>
@@ -156,16 +155,7 @@
 
         <a-entity id="Light" light="intensity:1.5; type:hemisphere; groundColor: #81a77b " position="-0.3 1 1" rotation="-85.86 -8.624 99.518" scale="5 6 3"></a-entity>
 
-        <a-entity
-                position="0 1.8 -2"
-                camera look-controls="magicWindowTrackingEnabled: false; touchEnabled: false; mouseEnabled: true; pointerLockEnabled: true;"
-                camera wasd-controls="">
-            <a-entity cursor="fuse: false; fuseTimeout: 500"
-                      position="0 0 -1"
-                      geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-                      material="color: black; shader: flat">
-            </a-entity>
-        </a-entity>
+
 
     </a-scene>
     </body>
