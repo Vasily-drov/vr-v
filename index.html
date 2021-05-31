@@ -2,6 +2,59 @@
 <html>
 <body>
 
+<style type="text/css" media="screen">
+body {
+  background: linear-gradient(to right, red, pink, black);
+}
+
+form {
+font-family: "Montserrat", sans-serif;
+font-size: 40px;
+letter-spacing: 8px;
+line-height: 60px;
+padding-left: 30%;
+padding-top: 25px;
+}
+
+#Plus {
+color: black;
+background-color: transparent;
+border: 2px dotted black;
+border-radius: 100%;
+font-size: 20px;
+transition-duration: 0.4s;
+padding:30px;
+left: 47%;
+position: absolute;
+margin-top: 80px;
+}
+
+#sub {
+border-radius: 6px;
+background-color: black;
+color: white;
+text-align: center;
+font-size: 20px;
+padding: 20px;
+width: 300px;
+margin-left: 39%;
+margin-top: 200px;
+position:scroll;
+}
+
+input[type=text] {
+  width: 180px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px black solid;
+  font-family: "Montserrat", sans-serif;
+  line-height: 10px;
+}
+
+</style>
+
 <p>Enter ETH adress:</p>
 
 <form id="form" action="room.html">
@@ -9,7 +62,7 @@
     <input type="submit" onclick="myFunction1();" />
 </form>
 
-<p>Or chech out those samples:<p>
+<p>Or check out those samples:<p>
     <ul>
         <li>
              <a href="room.html" onclick="myFunction2('0xc6b0562605d35ee710138402b878ffe6f2e23807')">Beeple</a>
@@ -48,6 +101,3 @@
 
 </body>
 </html>
-
-
-
