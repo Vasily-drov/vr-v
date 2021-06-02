@@ -9,75 +9,135 @@ body {
 
 #firstP {
 font-family: "Montserrat", sans-serif;
-font-size: 40px;
-letter-spacing: 8px;
-line-height: 60px;
-padding-left: 32%;
+font-size: 30px;
+letter-spacing: 11px;
+line-height: 40px;
 padding-top: 25px;
+margin: 100px auto;
+max-width: 800px;
+text-align: center;
 }
 
-#secondP {
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-  font-size: 20px;
-  letter-spacing: 3px;
-  padding-left: 36%;
-  padding-top: 125px;
-}
 
 .examplesList {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 25px;
+  line-height: 50px;
+  font-size: 30px;
   letter-spacing: 4px;
+  text-align: left;
+  margin: auto;
   padding-left: 45%;
-  padding-top: 50px;
-  line-height: 40px;
+  padding-top: 60px;
 }
 
 #userInput {
   font-size: 40px;
   padding: 10px;
-  margin-left: 29%;
-  width: 550px;
+  margin-left: 28%;
+  width: 600px;
+  text-align: center;
 }
 
 
 #sub {
-border-radius: 6px;
-background-color: black;
-color: white;
-font-size: 20px;
-padding: 20px;
-width: 220px;
-margin-top:100px;
-margin-left: -28%;
-position: absolute;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  margin: 10px auto;
+  margin-left: 31%;
+  width: 550px;
+  height: 50px;
+  text-align: center;
 }
 
 a {
   color: DarkSlateGrey;
 }
+
+.basic {
+   font-family: "Montserrat", sans-serif;
+   font-weight: lighter;
+   font-size: 30px;
+   letter-spacing: 1px;
+   margin: 100px auto;
+   border: 3px black solid;
+   padding: 70px;
+   max-width: 700px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 55px;
+  letter-spacing: 5px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  letter-spacing: 6px;
+  text-align: center;
+  margin: 0px auto;
+  max-width: 1000px;
+  color: DimGrey;
+}
+
+.small {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 20px auto;
+  max-width: 650px;
+  text-align: center;
+  color: DimGrey;
+}
+
+.smallBorder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 0px auto;
+  margin-top: 100px;
+  max-width: 550px;
+  text-align: center;
+  border: black dotted 3px;
+  padding: 20px;
+}
+
 </style>
+<h1> Welcome to NFTemple</h1>
+<h2>the place where your NFTs get another dimension</h2>
 
 <p id="firstP">Enter ETH adress:</p>
 
 <form id="form" action="room.html">
-    <input  type="text" id="userInput" />
-    <input type="submit" id="sub" onclick="myFunction1();" />
+    <input type="text" id="userInput" />
+    <input type="submit" id="sub" value="Enter The Room" onclick="myFunction1();" />
 </form>
 
-<p id="secondP" >Or check out those samples:<p>
-    <ul class="examplesList">
-        <li>
-             <a href="room.html" onclick="myFunction2('0xc6b0562605d35ee710138402b878ffe6f2e23807')">Beeple</a>
-        </li>
-        <li>
-            <a href="room.html" onclick="myFunction2('0x795fb0e902f9e0fe87dab5a9dac37ad7c5bede0a')">LilJon</a>
-        </li>
-        <li>
-            <a href="room.html" onclick="myFunction2('0x1a7759dfa6bc62d8a4905e8c7f936e543026ccce')">Random Dude</a>
-        </li>
+<p class="smallBorder"> Examples Of NFT Exhibits </p>
+
+<p class="small">Here are some examples of prominent artists' ETH addresses that you can view in the temple right now.</p>
+
+<ul class="examplesList">
+    <li>
+        <a href="room.html" onclick="myFunction2('0xc6b0562605d35ee710138402b878ffe6f2e23807')">Beeple</a>
+    </li>
+    <li>
+        <a href="room.html" onclick="myFunction2('0x795fb0e902f9e0fe87dab5a9dac37ad7c5bede0a')">LilJon</a>
+    </li>
+    <li>
+        <a href="room.html" onclick="myFunction2('0x1a7759dfa6bc62d8a4905e8c7f936e543026ccce')">Random Dude</a>
+    </li>
     <li>
         <a href="room.html" onclick="myFunction2('0x267a7ba3432db1f18d52b8776e2ba0e574091c3b')">ernest0</a>
     </li>
@@ -87,7 +147,17 @@ a {
     <li>
         <a href="room.html" onclick="myFunction2('0xc24f574d6853f6f6a31c19d468a8c1b3f31c0e54')">shilpixels</a>
     </li>
-    </ul>
+</ul>
+
+<p class="basic">With the power of blockchain you can create a 3D gallery filled with your NFTs. It only takes a couple of clicks!</p>
+<p class="basic">If you already have tokens in your ETH wallet you can preview its contents in the temple. Simply paste the wallet address in our form (above). And no, we don't need your private key and we don't trade or share any data. In fact we even don't store anything.</p>
+
+
+
+
+<p class="basic"> COMING UP:Ability to generate NFTemple tokens with unique addresses on ENS (Ethereum Name Service) so that anyone can share their gallery with other people.</p>
+
+
 
 <script>
     function myFunction1() {
